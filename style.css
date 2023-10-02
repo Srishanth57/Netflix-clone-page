@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    flex-basis: auto;
+    box-sizing: border-box;
+    color: white;
+}
+.bg{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('banner.jpg');
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.logo{
+   margin: 8px 0 0 16px;
+   width: 190px;
+   color: rgb(229,9,20);
+}
+.imglogo{
+    width: 500px;
+    display: inline-block;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 125px;
+}
+
+.menu {
+    width: 600px;
+    height: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 300px;
+}
+.nav{
+    margin-left: 24px;
+    height:37px ;
+    width: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.menu .dropdown button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: #303030;
+}
+
+.content{
+    margin-top: 200px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cont-h{
+    font-weight: 900;
+    font-size: 48px;
+}
+.cont-p{
+    font-size: 24px;
+    margin-top: 16px;
+}
+.cont-h3{
+    font-size: 20px;
+}
+.container input{
+   background: transparent;
+   width: 375px;
+   height: 56px;
+   padding: 25px 16px 8px;
+   display: inline;
+}
+.cont-b{
+    width: 200px;
+    height: 56px;
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container input{
+    border-style: solid;
+    border-width: 0.1px;
+
+}
+
+.bg-border{
+    background: #2a2d43;
+    height: 10px;
+    width: 100%;
+}
+.main-container{
+    padding: 150px 0;
+    margin: 0 0 175px 0;
+}
+#cont{
+    background-color: black;
+    padding-top: 50px;
+    height: 600px;
+}
+.cont-p1{
+    width: 685px;
+    font-size: 24px;
+    margin-top: 16px;
+}
+.padding{
+    padding-left: 50px;
+}
+.width{
+    width: 580px;
+}
+/* -------------------page frequently asked question----------- */
+h2 {
+    font-size: 42px;
+
+}
+.faq{
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color:#303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.1ms;
+}
+input[type="radio"]{
+    display: none;
+}
+.faq-content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height:0 ;
+    overflow: hidden;
+    transition: max-height 0.5s , padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .faq-content{
+    max-height: 600px;
+    padding: 30px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+/* ---------------------------------footer-------------------------------- */
+.footer{
+    padding: 70px 130px;
+    font-size: 14px;
+    background-color: black;
+}
+.footcont ul li{
+    list-style: none;
+    padding: 7px;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+.footer button{
+    background-color: transparent;
+}
+.footer a{
+    color: white;
+}
+.arrange{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: start;
+}
+.footcont{
+    padding-right: 100px;
+    display: flex;
+    justify-content: start;
+}
